@@ -74,16 +74,22 @@ export default function Home() {
             <div className="flex space-x-8">
               <button
                 onClick={() => handleSelectPet("cat")}
-                className="bg-blue-400 cursor-pointer text-white w-48 h-48 text-6xl flex items-center justify-center rounded-full"
+                className="bg-blue-400 group cursor-pointer text-white w-48 h-48 text-6xl flex flex-col items-center justify-center rounded-full"
               >
-                <FaCat className="text-lime-400" />
+                <FaCat className="text-lime-400 group-hover:scale-150 transition-all" />
+                <p className="hidden text-4xl mt-3 group-hover:inline-flex transition-all">
+                  meow!!
+                </p>
               </button>
 
               <button
                 onClick={() => handleSelectPet("dog")}
-                className="bg-lime-400 text-white w-48 h-48 text-6xl flex items-center justify-center rounded-full"
+                className="bg-lime-400 group text-white w-48 h-48 text-6xl flex flex-col items-center justify-center rounded-full"
               >
-                <FaDog className="text-blue-400" />
+                <FaDog className="text-blue-400 group-hover:scale-150 transition-all" />
+                <p className="hidden text-4xl mt-3 group-hover:inline-flex transition-all">
+                  woof!!
+                </p>
               </button>
             </div>
           </div>
@@ -112,7 +118,7 @@ export default function Home() {
               <FaArrowLeft />
             </button>
             <div className="flex flex-col sm:flex-row sm:space-x-4  h-screen w-full items-center justify-center ">
-              <div className="w-full sm:w-1/2 lg:w-1/4 flex flex-col items-end justify-center">
+              <div className="w-full h-96 border-8 px-5 py-4 border-lime-400 rounded-xl sm:w-1/2 lg:w-1/4 flex flex-col items-end justify-center">
                 <div className="w-full">
                   <label
                     htmlFor="dogtype"
@@ -150,22 +156,23 @@ export default function Home() {
                       ref={dogKgRef}
                       onChange={(e) => mamaHandler(e.target.value)}
                       className="block w-full p-4 bg-lime-400 rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      placeholder="X kg"
+                      placeholder="X KG"
                       defaultValue={0}
                     />
                   </div>
-                  <div className="text-center mt-4 space-y-4 text-white border-4 border-lime-400 p-5 rounded-lg">
-                    <h2 className="text-2xl">Daily food of your dog</h2>{" "}
+                  <div className="text-center  mt-4 space-y-4 text-white border-4 border-lime-400 p-5 rounded-lg">
+                    <h2 className="text-2xl ">Daily food of your dog</h2>{" "}
                     <p className="text-4xl">{mama} gram</p>
                   </div>
                 </div>
               </div>
               <div className="hidden lg:w-1/4 border-lime-400 lg:flex items-left justify-center">
-                <FaDog className="w-full h-80 border-2 border-lime-400 rounded-xl p-3"/>
+                <FaDog className="w-full h-96 border-2 bg-lime-400 text-blue-400 border-lime-400 rounded-xl p-3" />
               </div>
             </div>
           </div>
         )}
+        <div className="w-full fixed bottom-0 h-10 flex items-center justify-center  text-xl bg-black text-white">This site made by Oğuz Berk Açar for demo purposes.</div>
       </div>
     </div>
   );
