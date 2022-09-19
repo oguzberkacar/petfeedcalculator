@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customback {
+  background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 50%,
+    #60a5fa 50%,
+    #60a5fa 100%);
+}
+
+
+
+.bg-cat-animaton {
+ animation: cat 0.7s ease-in-out forwards;
+ animation-duration: 0.2s;
+ animation-delay: 0.1s;
+
+}
+
+.bg-catback-animaton {
+  animation: catback 0.7s ease-in-out forwards;
+  animation-duration: 0.1s;
+  animation-delay: 0.0s;
+ 
+ }
+ 
+
+.bg-dog-animaton {
+  animation: dog 0.7s ease-in-out forwards;
+  animation-duration: 0.2s;
+  animation-delay: 0.1s;
+ 
+ }
+
+ .bg-dogback-animaton {
+  animation: dog 0.7s ease-in-out forwards;
+  animation-duration: 0.2s;
+  animation-delay: 0.1s;
+ 
+ }
+
+
+@keyframes cat {
+  0% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 50%,
+    #60a5fa 50%,
+    #60a5fa 100%);
+  }
+  20% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 60%,
+    #60a5fa 60%,
+    #60a5fa 100%);
+  }
+  40% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 70%,
+    #60a5fa 70%,
+    #60a5fa 100%);
+  }
+  60% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 80%,
+    #60a5fa 80%,
+    #60a5fa 100%);
+  }
+  80% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 90%,
+    #60a5fa 90%,
+    #60a5fa 100%);
+  }
+  100% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 100%,
+    #60a5fa 100%,
+    #60a5fa 100%);
+  }
+  
+}
+
+@keyframes catback {
+  0% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 100%,
+    #60a5fa 100%,
+    #60a5fa 100%);
+  }
+  20% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 90%,
+    #60a5fa 90%,
+    #60a5fa 100%);
+  }
+  40% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 80%,
+    #60a5fa 80%,
+    #60a5fa 100%);
+  }
+  60% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 70%,
+    #60a5fa 70%,
+    #60a5fa 100%);
+  }
+  80% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 60%,
+    #60a5fa 60%,
+    #60a5fa 100%);
+  }
+  100% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 50%,
+    #60a5fa 50%,
+    #60a5fa 100%);
+  }
+}
+
+@keyframes dog {
+  0% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 50%,
+    #60a5fa 50%,
+    #60a5fa 100%);
+  }
+  20% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 40%,
+    #60a5fa 40%,
+    #60a5fa 100%);
+  }
+  40% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 30%,
+    #60a5fa 30%,
+    #60a5fa 100%);
+  }
+  60% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 20%,
+    #60a5fa 20%,
+    #60a5fa 100%);
+  }
+  80% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 10%,
+    #60a5fa 10%,
+    #60a5fa 100%);
+  }
+  100% {
+    background: #60a5fa
+  }
+  
+}
+
+@keyframes dogback {
+  0% {
+    background: #60a5fa
+  }
+  20% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 10%,
+    #60a5fa 10%,
+    #60a5fa 100%);
+  }
+  40% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 20%,
+    #60a5fa 20%,
+    #60a5fa 100%);
+  }
+  60% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 30%,
+    #60a5fa 30%,
+    #60a5fa 100%);
+  }
+  80% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 40%,
+    #60a5fa 40%,
+    #60a5fa 100%);
+  }
+  100% {
+    background: linear-gradient(
+    to right,
+    #a3e635 0%,
+    #a3e635 50%,
+    #60a5fa 50%,
+    #60a5fa 100%);
+  }
+  
+}
+
+
